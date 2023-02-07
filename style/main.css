@@ -1,0 +1,176 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Space Grotesk";
+  font-weight: 500;
+  font-size: 18px;
+  color: hsl(278deg, 68%, 11%);
+  text-transform: uppercase;
+}
+
+.container .wrapper .left .card-front .abs-card-front .circule-wrapper .circule-small, .container .wrapper .left .card-front .abs-card-front .circule-wrapper .circule-big {
+  border-radius: 50%;
+  aspect-ratio: 1/1;
+}
+
+.container {
+  max-width: 1440px;
+  margin: auto;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container .wrapper {
+  display: flex;
+  width: 100%;
+  aspect-ratio: 16/9;
+}
+.container .wrapper .left {
+  width: 33.3%;
+  background-image: url(../images/bg-main-desktop.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.container .wrapper .left .card-front {
+  position: absolute;
+  width: 100%;
+  aspect-ratio: 16/9;
+  left: 50%;
+  top: 20%;
+}
+.container .wrapper .left .card-front img {
+  position: absolute;
+  z-index: 100;
+  width: 100%;
+  height: 100%;
+}
+.container .wrapper .left .card-front .abs-card-front {
+  position: relative;
+  z-index: 150;
+  top: 0;
+  padding: 1em;
+  color: hsl(0deg, 0%, 100%);
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+.container .wrapper .left .card-front .abs-card-front > p {
+  width: 100%;
+  letter-spacing: 0.5em;
+  margin-top: 18%;
+}
+.container .wrapper .left .card-front .abs-card-front .circule-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+}
+.container .wrapper .left .card-front .abs-card-front .circule-wrapper .circule-big {
+  width: 3em;
+  background-color: hsl(0deg, 0%, 100%);
+}
+.container .wrapper .left .card-front .abs-card-front .circule-wrapper .circule-small {
+  width: 1.5em;
+  border: 1px solid hsl(0deg, 0%, 100%);
+}
+.container .wrapper .left .card-front .abs-card-front .front-card-info-wrapper {
+  margin-top: auto;
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.8em;
+}
+.container .wrapper .left .card-back {
+  color: hsl(0deg, 0%, 100%);
+  position: absolute;
+  left: 60%;
+  top: 55%;
+  width: 100%;
+  aspect-ratio: 16/9;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.container .wrapper .left .card-back img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 100;
+}
+.container .wrapper .left .card-back p {
+  position: relative;
+  z-index: 150;
+  margin-right: 2.5em;
+}
+.container .wrapper .right {
+  width: 66.7%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-right: 10em;
+}
+.container .wrapper .right .form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3em;
+  width: 40%;
+}
+.container .wrapper .right .form .alert {
+  color: hsl(0deg, 100%, 66%) !important;
+  font-size: 0.7em;
+}
+.container .wrapper .right .form input {
+  padding: 0.5em;
+  border: 1px solid hsl(270deg, 3%, 87%);
+  border-radius: 0.3em;
+  margin-bottom: 1em;
+}
+.container .wrapper .right .form .cvc-exp-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container .wrapper .right .form .cvc-exp-wrapper .exp-wrapper {
+  display: flex;
+  width: 50%;
+  flex-wrap: wrap;
+  gap: 0.5em;
+}
+.container .wrapper .right .form .cvc-exp-wrapper .exp-wrapper :not(:first-child) {
+  width: 40%;
+}
+.container .wrapper .right .form .cvc-exp-wrapper .cvc-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+  width: 50%;
+}
+.container .wrapper .right .form button {
+  padding: 1em;
+  background-color: hsl(278deg, 68%, 11%);
+  color: hsl(0deg, 0%, 100%);
+  letter-spacing: 0.7px;
+  border-radius: 0.3em;
+  border: none;
+}
+
+.hidden {
+  opacity: 0 !important;
+}
+
+input:focus {
+  outline: none;
+  border: 0.2em solid hsl(270deg, 3%, 87%) !important;
+  -o-border-image: linear-gradient(hsl(249deg, 99%, 64%), hsl(278deg, 94%, 30%)) 1 !important;
+     border-image: linear-gradient(hsl(249deg, 99%, 64%), hsl(278deg, 94%, 30%)) 1 !important;
+}
+
+.input-alert {
+  outline: none;
+  border: 0.1em solid hsl(0deg, 100%, 66%) !important;
+}/*# sourceMappingURL=main.css.map */
